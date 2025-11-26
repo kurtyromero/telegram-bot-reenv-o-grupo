@@ -35,7 +35,7 @@ async def receive_from_owner(update: Update, context: ContextTypes.DEFAULT_TYPE)
             print("Error enviando a grupo:", e)
 
 async def main():
-    app = ApplicationBuilder().token("8549877239:AAGLYiSKeVMDP1S-ZSoh_S779NRT1QU3BvA").build()
+    app = ApplicationBuilder().token("8558528251:AAG-r1PscFmco4AjsW2di0huBezP0UCkm_k").build()
 
     app.add_handler(MessageHandler(filters.COMMAND, register_group))
     app.add_handler(MessageHandler(filters.ALL, receive_from_owner))
